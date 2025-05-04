@@ -43,7 +43,7 @@ class UserController extends Controller
             'status' => true,
             'message' => 'Berhasil menambahkan data user',
             'data' => $user,
-        ], 200);         
+        ], 201);         
     }
 
     public function update(Request $request, $id) {
