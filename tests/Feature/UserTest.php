@@ -40,7 +40,7 @@ class UserTest extends TestCase
   {
     $user = User::factory()->create();
     $response = $this->deleteJson("/api/users/{$user->id}");
-    $response->assertStatus(200)->assertJson(['message' => 'User deleted']);
+    $response->assertStatus(200)->assertJson(['message' => 'Berhasil menghapus data user']);
   }
 }
 
